@@ -6,14 +6,18 @@ import Link from 'next/link'
 
 const Contacts = () => {
   return (
-    <div className="flex items-center justify-between p-5 bg-black text-white min-w-screen">
+    <div className="flex flex-col md:flex-row items-center justify-between p-5 bg-black text-white min-w-screen gap-4">
       <div><Image src={logo} alt="logo" width={250} height={250} /></div>
-      <div className="flex justify-between items-center w-fit px-8">
-        <div className="flex items-center gap-6">
-          <Link href="https://github.com/FahadNassir" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
-            <FaGithub />
-          </Link>
-        </div>
+      <div className="flex justify-between items-center gap-6">
+        <Link href="https://github.com/FahadNassir" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
+          <FaGithub />
+        </Link>
+        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
+          <FaLinkedin />
+        </Link>
+        <Link href="mailto:nassirfahad69@gmail.com" className="hover:text-blue-400 transition-colors text-2xl">
+          <FaEnvelope />
+        </Link>
       </div>
       <div className="mt-8 text-sm text-gray-400">
         <p className="mb-2">

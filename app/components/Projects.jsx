@@ -11,12 +11,12 @@ const Projects = ({ ref }) => {
 
   const projects = [
     {
-      name: "Hospital ticketing",
-      description: "print tickets for patients similar to what happens in a bank.Built with Next.js and Express js.",
-      image: hospital,
-      link: "https://patients-client.onrender.com/",
+      name: "InvesTrack",
+      description: "InvesTrack is an investment tracking platform built with Next.js",
+      image: imp,
+      link: "https://i-m-p.onrender.com/",
       framework: nextt
-    }  ,
+    },
     {
       name: "Teapot",
       description: "Teapot is a restaurant management system built with Next.js and Express js.",
@@ -32,12 +32,12 @@ const Projects = ({ ref }) => {
       framework: nextt
     },
     {
-      name: "InvesTrack",
-      description: "InvesTrack is an investment tracking platform built with Next.js",
-      image: imp,
-      link: "https://i-m-p.onrender.com/",
+      name: "Hospital ticketing",
+      description: "print tickets for patients similar to what happens in a bank.Built with Next.js and Express js.",
+      image: hospital,
+      link: "https://patients-client.onrender.com/",
       framework: nextt
-    },
+    }  ,
   ]
   return (
     <div ref={ref} className='w-full min-h-screen p-6 flex flex-col items-center justify-center'>
