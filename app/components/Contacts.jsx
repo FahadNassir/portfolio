@@ -1,0 +1,38 @@
+"use client"
+import logo from "../assets/logo.png"
+import Image from "next/image"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import Link from 'next/link'
+
+const Contacts = () => {
+  return (
+    <div className="flex items-center justify-between p-5 bg-black text-white min-w-screen">
+      <div><Image src={logo} alt="logo" width={250} height={250} /></div>
+      <div className="flex justify-between items-center w-fit px-8">
+        <div className="flex items-center gap-6">
+          <Link href="https://github.com/FahadNassir" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
+            <FaGithub />
+          </Link>
+        </div>
+      </div>
+      <div className="mt-8 text-sm text-gray-400">
+        <p className="mb-2">
+          Email: nassirfahad69@gmail.com
+        </p>
+        <p>
+          Phone: +254746510727
+        </p>
+      </div>
+      <div className="mt-4 text-sm text-gray-400">
+        <p className="mb-2">
+          Note: The hosting for these sites is currently free, so it might take the servers a while to start up.
+        </p>
+        <p>
+          The logos and company names in the projects are only for demonstration purposes and I'm not in partnership or endorsed by any of them.
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default Contacts

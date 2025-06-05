@@ -1,7 +1,25 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
-  }
+    },
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "**/*.test.js",
+    "**/*.spec.js"
+  ]
 }
