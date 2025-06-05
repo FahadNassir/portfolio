@@ -14,7 +14,7 @@ const Projects = ({ ref }) => {
       name: "InvesTrack",
       description: "InvesTrack is an investment tracking platform built with Next.js",
       image: imp,
-      link: "https://i-m-p.onrender.com/",
+      link: "https://i-m-p.vercel.app/",
       framework: nextt
     },
     {
