@@ -28,7 +28,7 @@ const Projects = ({ ref }) => {
       name: "blackMarket",
       description: "blackMarket is an e-commerce platform built with Next.js and Express js.",
       image: blackMarket,
-      link: "https://blackmarket-2.onrender.com/",
+      link: "https://black-market-2.vercel.app/",
       framework: nextt
     },
     {
