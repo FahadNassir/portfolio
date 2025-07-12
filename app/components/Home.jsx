@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { delay, motion } from 'framer-motion';
 
 import tail from '../assets/tailwindcss.png';
@@ -60,10 +61,17 @@ const Home = ({ projectsRef }) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 space-y-20">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 space-y-20 relative">
+      
+      {/* Certifications Button */}
+      <Link href="/certifications">
+        <button className="absolute top-6 right-6 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
+          Certifications
+        </button>
+      </Link>
       
       {/* Hero Section */}
-      <section className="text-center max-w-4xl space-y-6 mt-10">
+      <section className="text-center max-w-4xl space-y-6 mt-5">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Building bold web experiences, front to back.
         </h1>
@@ -71,13 +79,13 @@ const Home = ({ projectsRef }) => {
           I'm a fullstack JavaScript developer crafting fast, modern apps with Node.js, MongoDB, React, Next.js & SolidJS. 
           Let&#39;s turn ideas into interactive realities.
         </p>
-        <button className="mt-5 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition view-projects-btn">
+        <button className="mt-2 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition view-projects-btn">
           View Projects
         </button>
       </section>
 
       {/* Animation Area */}
-      <div className="relative flex h-32 w-full max-w-6xl items-end justify-center">
+      <div className="relative flex h-32 w-full max-w-6xl -top-6 items-end justify-center">
         
         <motion.div
           variants={container}
