@@ -76,7 +76,7 @@ const webDevCertifications = [
   }
 ]
 
-const page = () => {
+const Certifications = () => {
   const [activeTab, setActiveTab] = useState('web')
 
   const containerVariants = {
@@ -231,4 +231,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Certifications
