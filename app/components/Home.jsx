@@ -11,8 +11,10 @@ import solid from '../assets/solid.png';
 import node from '../assets/nodedotjs.png';
 import next from '../assets/nextdotjs.png';
 import mongo from '../assets/mongodb.png';
+import terminal from '../assets/terminal.png';
+import desktop from '../assets/desktop.png';
 
-const skills = [tail, rreact, solid, node, next, mongo];
+const skills = [tail, rreact, terminal, next, mongo, desktop];
 
 const container = {
   hidden: { opacity: 0 },
@@ -76,8 +78,8 @@ const Home = ({ projectsRef }) => {
           Building bold web experiences, front to back.
         </h1>
         <p className="text-gray-600 text-lg md:text-xl mt-2 mb-5">
-          I'm a fullstack JavaScript developer crafting fast, modern apps with Node.js, MongoDB, React, Next.js & SolidJS. 
-          Let&#39;s turn ideas into interactive realities.
+        I build fast frontends and fix slow networks.
+With Next.js, React, and Tailwind on one side — and DNS, firewalls, and remote support on the other — I bridge clean UI with clean infrastructure.
         </p>
         <button className="mt-2 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition view-projects-btn">
           View Projects

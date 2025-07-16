@@ -1,5 +1,5 @@
 "use client"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo2.png"
 import Image from "next/image"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const Contacts = () => {
         <Link href="https://github.com/FahadNassir" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
           <FaGithub />
         </Link>
-        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
+        <Link href="https://www.linkedin.com/in/fahad-nassir-4997b8374?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlsigjzZqT%2F6bKEKlVAKhRg%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors text-2xl">
           <FaLinkedin />
         </Link>
         <Link href="mailto:nassirfahad69@gmail.com" className="hover:text-blue-400 transition-colors text-2xl">
